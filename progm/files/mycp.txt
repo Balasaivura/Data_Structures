@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+int Main(int Argc,char *argv[])
+{
+	char Ch;
+	FILE *fp1,*fp2;
+	if(argc!=3)
+	{
+		printf("in-correct Input\n");
+		printf("exe Sourcefile Destionation File\n");
+		exit(0);
+	}
+	fp1=fopen(argv[1],"r");
+	if(fp1==NULL)
+	{
+		printf("%s Is Not Found\n",argv[1]);
+		exit(0);
+	}
+	fp2=fopen(argv[2],"w");
+	while((ch=fgetc(fp1))!=EOF)
+		fputc(ch,fp2);
+	fclose(fp1);
+	fclose(fp2);
+}
