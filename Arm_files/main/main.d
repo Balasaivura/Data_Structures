@@ -1,0 +1,17 @@
+main.o: MAIN.c
+main.o: C:\KeilARM\ARM\INC\Philips\lpc21xx.h
+main.o: delay.h
+main.o: types.h
+main.o: lcd.h
+main.o: types.h
+main.o: defines.h
+main.o: kpm.h
+main.o: types.h
+main.o: rtc.h
+main.o: types.h
+main.o: eint.h
+main.o: dht11.h
+main.o: types.h
+main.o: esp01.h
+main.o: uart.h
+main.o: types.h

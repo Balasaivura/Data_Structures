@@ -1,0 +1,12 @@
+main3.o: main3.c
+main3.o: C:\KeilARM\ARM\INC\Philips\LPC21xx.h
+main3.o: types.h
+main3.o: i2c.h
+main3.o: types.h
+main3.o: i2c_eeprom.h
+main3.o: types.h
+main3.o: delay.h
+main3.o: types.h
+main3.o: lcd.h
+main3.o: types.h
+main3.o: lcd_defines.h

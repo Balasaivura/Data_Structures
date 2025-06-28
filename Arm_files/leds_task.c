@@ -1,0 +1,19 @@
+//leds_8_al_dispersed3.c
+#include"types.h"
+#include"led.h"
+#include"delay.h"
+main()
+{	
+	u32 i,j=0;
+	init_leds();
+	delay_s(5);
+	for(i=0;i<=7;i++)
+	{
+		disp_bin_leds(i);
+		//disp_bin_leds(1<<i);
+		//j+=100;
+		//delay_ms(j);
+		delay_ms((i+1)*100);
+	}
+	while(1);
+}
